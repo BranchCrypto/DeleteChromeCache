@@ -1,6 +1,6 @@
-# DelateData - 浏览器缓存清理工具
+# DelateChromeCache - 浏览器缓存清理工具
 
-DelateData是一个Chrome扩展，用于轻松清除浏览器缓存数据。它提供了多种功能，帮助用户管理浏览器的缓存、Cookie和其他存储数据。
+DelateChromeCache是一个Chrome扩展，用于轻松清除浏览器缓存数据。它提供了多种功能，帮助用户管理浏览器的缓存、Cookie和其他存储数据。
 
 ## 功能特点
 
