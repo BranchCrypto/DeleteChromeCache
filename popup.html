@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>浏览器缓存清理工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>浏览器缓存清理工具</h1>
+    
+    <div class="section-container">
+      <div class="left-column">
+        <h2>数据类型</h2>
+        <div class="checkbox-group compact">
+          <div class="checkbox-item">
+            <input type="checkbox" id="cookies" checked>
+            <label for="cookies">Cookies</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="localStorage" checked>
+            <label for="localStorage">本地存储</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="cache" checked>
+            <label for="cache">缓存</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="history">
+            <label for="history">历史记录</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="right-column">
+        <div class="action-section">
+          <h2>单次清除</h2>
+          <button id="clearCurrentSite" class="primary-button">清除当前站点缓存</button>
+          <div id="clearStatus" class="status"></div>
+        </div>
+        
+        <div class="action-section">
+          <h2>循环清除</h2>
+          <div class="time-inputs">
+            <div class="option">
+              <input type="number" id="intervalMinutes" min="0" value="0">
+              <label for="intervalMinutes">分钟</label>
+            </div>
+            <div class="option">
+              <input type="number" id="intervalSeconds" min="1" max="59" value="30">
+              <label for="intervalSeconds">秒</label>
+            </div>
+          </div>
+          
+          <div class="button-container">
+            <button id="startAutoClean" class="action-button start">开始循环清除</button>
+            <button id="stopAutoClean" class="action-button stop" disabled>停止循环清除</button>
+          </div>
+          <div id="autoCleanStatus" class="status"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section current-site">
+      <div class="site-info">
+        <div class="info-row">
+          <span class="info-label">网站:</span>
+          <span id="currentTitle" class="info-value">-</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">地址:</span>
+          <span id="currentUrl" class="info-value">-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
