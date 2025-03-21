@@ -23,12 +23,6 @@ DelateChromeCache是一个Chrome扩展，用于轻松清除浏览器缓存数据
 
 ## 安装方法
 
-### 从Chrome网上应用店安装
-1. 访问Chrome网上应用店
-2. 搜索"DelateData"扩展
-3. 点击"添加到Chrome"按钮
-
-### 开发者模式安装
 1. 下载本项目并解压
 2. 打开Chrome浏览器，进入扩展管理页面：`chrome://extensions/`
 3. 开启右上角的"开发者模式"
